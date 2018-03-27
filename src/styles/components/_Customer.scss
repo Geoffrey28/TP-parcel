@@ -1,0 +1,66 @@
+.Customer {
+  line-height: 1.5;
+  padding: 0 20px;
+  @include for-size(tablet-portrait-up){
+    padding: 20px;
+  }
+  &-desc {
+    @include for-size(tablet-portrait-up){
+      margin: 100px auto;
+    }
+  }
+  &-descText {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  &-descLink {
+    font-size: 16px;
+    cursor: pointer;
+    color: $secondaryColor;
+    text-align: center;
+    margin-top: 10px;
+    @include for-size(tablet-portrait-up){
+      text-align: left;
+    }
+  }
+  &-item {
+    padding: 50px 64px;
+    @include for-size(tablet-portrait-up) {
+      border-radius: 4px;
+      line-height: 2;
+      box-shadow: 0px 15px 20px #eaeaea;
+    }
+  }
+  &-itemStar {
+    &-img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  &-itemReview {
+    font-size: 14px;
+  }
+  &-itemInfo {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  &-userFace {
+    width: 48px;
+    height: 48px;
+  }
+  &-itemStrong {
+    font-weight: 600;
+  }
+  &-itemDesc {
+    font-weight: 100;
+    font-size: 14px;
+  }
+}
+.mobileNone {
+  display: none;
+  @include for-size(tablet-portrait-up){
+    display: block;
+  }
+}

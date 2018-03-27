@@ -1,0 +1,36 @@
+.QuestionPanel {
+  &-container {
+    margin: 50px 0;
+  }
+  &-title {
+    text-align: center;
+    font-weight: 600;
+    color: $secondaryColor;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  &-items {
+    width: 100%;
+    max-width: 540px;
+    height: 50px;
+    border: 1px solid lightgrey;
+    padding-left: 20px;
+    border-radius: 4px;
+    line-height: 50px;
+    margin: 0 auto 10px auto;
+    font-weight: 500;
+    @include for-size(bp-desktop-large){
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  &-text {
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
+  }
+  &-strong {
+    color: $secondaryColor;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,38 @@
+.HowItWorks {
+  padding: 40px 20px 0 20px;
+  @include for-size(tablet-portrait-up){
+    padding: 40px 20px 40px 20px;
+    margin: 0 auto;
+  }
+  &-title {
+    font-size: 20px;
+    color: #4d7fd5;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+  }
+  &-subtitle {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 30px;
+    @include for-size(tablet-portrait-up){
+      margin-bottom: 40px;
+    }
+  }
+  &-contentAssets {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  &-imgContainer {
+    margin: 0 20px;
+  }
+  &-text {
+    font-size: 14px;
+    line-height: 2;
+    word-wrap: break-word;
+  }
+  &-strong {
+    color: #4d7fd5;
+    font-weight: 600;
+  }
+}
