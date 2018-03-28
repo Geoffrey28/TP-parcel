@@ -1,0 +1,13 @@
+.Partners {
+  margin: 0 auto;
+  height: 91px;
+  line-height: 91px;
+  width: 100%;
+  background: #eaeaea;
+  @include for-size(tablet-portrait-up) {
+    height: 176px;
+  }
+}
+.rowHeight {
+  height: 100%;
+}
