@@ -1,27 +1,51 @@
 .Services {
   padding: 50px 10px;
-  background-image: url(../img/hero-small.jpg);
+  background: url('../img/hero-small.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
+  height: 500px;
   &-title {
     text-align: center;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 20px;
+    @include for-size(tablet-portrait-up) {
+      margin-top: 40px;
+    }
   }
   &-item {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+    @include for-size(tablet-portrait-up) {
+      flex-direction: column;
+    }
   }
   &-circle {
-    width: 110px;
-    height: 110px;
-    border-radius: 110px;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
     background: lightgrey;
     opacity: 0.5;
+    @include for-size(tablet-portrait-up) {
+      margin: 0 auto;
+    }
   }
   &-text {
     margin: 35px 0 0 10px;
     font-size: 14px;
     font-weight: 700;
+    @include for-size(tablet-portrait-up) {
+      text-align: center;
+      margin: 15px 0 0 10px;
+    }
+  }
+}
+.reverse2 {
+  flex-direction: row-reverse;
+  @include for-size(tablet-portrait-up){
+    flex-direction: column;
   }
 }

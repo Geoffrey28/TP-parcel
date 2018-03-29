@@ -1,0 +1,58 @@
+.Footer {
+  color: #fff;
+  background: #333;
+  width: 100%;
+  @include for-size(tablet-portrait-up) {
+    width: 80%;
+  }
+  &-imgContainer {
+    width: 32px;
+    height: 32px;
+    border: 1px solid grey;
+  }
+  &-img {
+
+  }
+  &-textContent {
+
+  }
+  &-desc {
+
+  }
+  &-descTitle {
+    font-size: 14px;
+  }
+  &-descText {
+    font-size: 12px;
+  }
+  &-link {
+
+  }
+  &-linkTitle {
+
+  }
+  &-link-item {
+
+  }
+  &-info {
+
+  }
+  &-infoTitle {
+
+  }
+  &-infoText {
+
+  }
+  &-contact {
+
+  }
+  &-contactTitle {
+
+  }
+  &-contacttext {
+
+  }
+  &-contactGreyText {
+
+  }
+}
